@@ -10,6 +10,7 @@ const PROJECTS = [
       "A web application for the company Lago & Sarmiento, an organization that offers financial mentoring. This web application is for financial projections targeting SMEs, it was built using .NET framework and a Microsoft SQL Server database.",
     company: "Lago & Sarmiento",
     companyLink: "https://www.lagoysarmiento.com/",
+    link: "",
     images: [
       "https://i.gyazo.com/08f465383d80a3ad4d9e67c84c4cc1eb.png",
       "https://i.gyazo.com/64e68932ff9540a9791be3b4c8f8e0bf.png",
@@ -36,10 +37,9 @@ const PROJECTS = [
     title: "De Feria CR",
     description:
       "I participated in the development of De Feria, a web application facilitating the location of farmer's markets throughout Costa Rica. The project, built in Python with the Django framework and backed by a PostgreSQL database, focused on providing users with an intuitive and efficient experience.",
-    company: "Deferia",
-    companyLink:
-      "https://sites.google.com/view/ridemensajeriaecologica/inicio?authuser=0",
-    link: "",
+    company: "",
+    companyLink: "",
+    link: "https://deferia.cr/",
     images: [
       "https://i.gyazo.com/a1c80c9c43a3cf4c3a5d82848d202547.png",
       "https://i.gyazo.com/f5eec304f5eaf74f10b9186e3c6fc6f9.png",

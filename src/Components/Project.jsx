@@ -6,12 +6,23 @@ import { MdWork } from "react-icons/md";
 export function Project({ project }) {
   return (
     <div>
-      <h1 className="text-yellow-300 text-lg font-semibold">{project.title}</h1>
+      {project.link !== "" ? (
+        <a
+          href={project.link}
+          className="text-yellow-300 text-lg font-semibold cursor-pointer hover:text-yellow-100"
+          target="_blank"
+        >
+          {project.title}
+        </a>
+      ) : (
+        <h1 className="text-gray-200 text-lg font-semibold">{project.title}</h1>
+      )}
+
       <p className="text-gray-300">{project.description}</p>
 
       {project.company !== "" && (
         <a
-          href="https://www.lagoysarmiento.com/"
+          href={project.companyLink}
           className="text-white my-2 flex items-center hover:text-gray-400"
           target="_blank"
         >
