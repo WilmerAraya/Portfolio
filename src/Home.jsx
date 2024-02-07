@@ -30,7 +30,7 @@ export function Home() {
         </div>
         <div className="mt-10 flex justify-center">
           <img
-            src="https://raw.githubusercontent.com/WilmerAraya/Portfolio/main/src/assets/coding.svg"
+            src="https://raw.githubusercontent.com/WilmerAraya/WilmerAraya/WilmerAraya-assets/coding.svg"
             alt=""
           />
         </div>
