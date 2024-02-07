@@ -45,11 +45,16 @@ export function NavBar() {
         </NavbarItem>
       </NavbarContent>
       <NavbarMenu className="bg-black/30 text-white">
-        {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
-            <Link className="text-white text-xl underline">{item}</Link>
-          </NavbarMenuItem>
-        ))}
+        <NavbarMenuItem>
+          <Link to="home" className="text-white text-xl underline">
+            About me
+          </Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem>
+          <Link to="projects" className="text-white text-xl underline">
+            Projects
+          </Link>
+        </NavbarMenuItem>
       </NavbarMenu>
     </Navbar>
   );

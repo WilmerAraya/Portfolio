@@ -61,8 +61,8 @@ export function Projects() {
         <div className="">
           {PROJECTS.map((project, index) => {
             return (
-              <div className="mb-28">
-                <Project key={index} project={project} />
+              <div key={index} className="mb-28">
+                <Project project={project} />
               </div>
             );
           })}
