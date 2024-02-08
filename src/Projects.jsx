@@ -53,7 +53,7 @@ const PROJECTS = [
 export function Projects() {
   return (
     <>
-      <article id="projects" className="h-full">
+      <article id="projects" className="h-full section">
         <div className="pt-24 mb-10 text-white flex items-center">
           <FaCode className="text-lg" />
           <h2 className="text-2xl ml-2 font-bold">Projects</h2>

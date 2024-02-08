@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-scroll";
+import { useScrollPosition } from "@n8tb1t/use-scroll-position";
+
 import {
   Navbar,
   NavbarBrand,
@@ -12,9 +14,21 @@ import {
 } from "@nextui-org/react";
 
 export function NavBar() {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
 
-  const menuItems = ["About me", "Projects"];
+  useScrollPosition(({ prevPos, currPos }) => {
+    const sections = document.querySelectorAll(".section");
+
+    sections.forEach((section) => {
+      const top = section.offsetTop;
+      const bottom = top + section.offsetHeight;
+
+      if (currPos.y < -top + 100 && currPos.y > -bottom) {
+        setActiveSection(section.id);
+      }
+    });
+  });
 
   return (
     <Navbar className="navbar" onMenuOpenChange={setIsMenuOpen}>
@@ -29,13 +43,20 @@ export function NavBar() {
         justify="center"
       >
         <NavbarItem>
-          <Link className="text-white" to="home" smooth={true} duration={500}>
+          <Link
+            className={activeSection === "home" ? "active " : "" + "text-white"}
+            to="home"
+            smooth={true}
+            duration={500}
+          >
             About me
           </Link>
         </NavbarItem>
-        <NavbarItem isActive>
+        <NavbarItem>
           <Link
-            className="text-white"
+            className={
+              activeSection === "projects" ? "active " : "" + "text-white"
+            }
             to="projects"
             smooth={true}
             duration={500}

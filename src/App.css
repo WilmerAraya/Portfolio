@@ -20,9 +20,47 @@ html {
 }
 
 body {
-  min-height: 100%;
   font-family: "Onest Variable";
-  background: radial-gradient(circle at top, #4e0e0e, #161616);
+  background: linear-gradient(351deg, #0e0e0e, #360505, #650808);
+  background-size: 900% 900%;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 45% 0%;
+  }
+  50% {
+    background-position: 56% 100%;
+  }
+  100% {
+    background-position: 45% 0%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 45% 0%;
+  }
+  50% {
+    background-position: 56% 100%;
+  }
+  100% {
+    background-position: 45% 0%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 45% 0%;
+  }
+  50% {
+    background-position: 56% 100%;
+  }
+  100% {
+    background-position: 45% 0%;
+  }
 }
 
 .navbar {
@@ -37,4 +75,9 @@ body {
 .control-carousel .text-white {
   --tw-text-opacity: 1;
   color: rgb(17, 17, 17);
+}
+
+.active {
+  color: rgb(250 204 21);
+  font-weight: bolder;
 }
