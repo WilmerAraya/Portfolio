@@ -39,7 +39,7 @@ export function Home() {
                   .pause(750)
                   .delete(17)
                   .pause(500)
-                  .type("Full Stack Developer");
+                  .type("Web Developer");
 
                 // Remember to return it!
                 return instance;
