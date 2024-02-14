@@ -32,16 +32,7 @@ export function NavBar() {
 
   return (
     <Navbar className="navbar" onMenuOpenChange={setIsMenuOpen}>
-      <NavbarContent className="sm:hidden">
-        <NavbarMenuToggle
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-        />
-      </NavbarContent>
-
-      <NavbarContent
-        className="hidden sm:flex gap-4 cursor-pointer"
-        justify="center"
-      >
+      <NavbarContent className="sm:flex gap-4 cursor-pointer" justify="center">
         <NavbarItem>
           <Link
             className={activeSection === "home" ? "active " : "" + "text-white"}
@@ -55,6 +46,18 @@ export function NavBar() {
         <NavbarItem>
           <Link
             className={
+              activeSection === "skills" ? "active " : "" + "text-white"
+            }
+            to="skills"
+            smooth={true}
+            duration={500}
+          >
+            Skills
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link
+            className={
               activeSection === "projects" ? "active " : "" + "text-white"
             }
             to="projects"
@@ -62,6 +65,18 @@ export function NavBar() {
             duration={500}
           >
             Projects
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link
+            className={
+              activeSection === "contact" ? "active " : "" + "text-white"
+            }
+            to="contact"
+            smooth={true}
+            duration={500}
+          >
+            Contact me
           </Link>
         </NavbarItem>
       </NavbarContent>

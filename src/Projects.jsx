@@ -28,7 +28,7 @@ const PROJECTS = [
       "https://sites.google.com/view/ridemensajeriaecologica/inicio?authuser=0",
     link: "",
     images: [
-      "https://i.gyazo.com/19b33e928652464b69007f5487cb37f4.png",
+      "https://github.com/WilmerAraya/WilmerAraya/blob/WilmerAraya-assets/images/ride-dashboard.png?raw=true",
       "https://i.gyazo.com/b136d647cb8ae11298003db2cb1e4b1c.png",
     ],
     github: "",
