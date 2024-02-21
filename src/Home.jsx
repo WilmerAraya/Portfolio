@@ -8,7 +8,10 @@ import { Download } from "@mui/icons-material";
 export function Home() {
   return (
     <>
-      <div id="home" className="pt-20 h-svh section">
+      <div
+        id="home"
+        className="h-svh -mt-10 section flex flex-col justify-center"
+      >
         <div className="flex justify-center sm:justify-start">
           <img
             className="border-large border-yellow-400 rounded-full mb-10 shadow sm:w-60 sm:h-60 w-40 h-40"

@@ -8,7 +8,7 @@ export function Project({ project }) {
     <div>
       {project.title}
 
-      <p className="text-gray-300">{project.description}</p>
+      {project.description}
 
       {project.github !== "" && (
         <a
