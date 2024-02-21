@@ -139,4 +139,36 @@ export const PROJECTS = [
     ],
     github: "https://github.com/FabianOrozcoChaves/JamesBond",
   },
+  {
+    title: (
+      <a
+        href="https://calendarapp.fly.dev/auth/login"
+        className="text-yellow-300 text-lg font-semibold underline hover:text-yellow-200"
+        target="_blank"
+      >
+        Calendar Web App (SPA)
+      </a>
+    ),
+    description: (
+      <p className="text-gray-300">
+        A Single Page Application, developed as part of a Udemy course. The
+        front-end of the application was built using the <b>ReactJS</b>{" "}
+        framework with <b>Redux</b> for state management. The back-end was
+        implemented with <b>Node.js</b> and the <b>Express.js</b> framework. The
+        application allows users to perform <b>CRUD</b> (Create, Read, Update,
+        Delete) operations on calendar events, which are stored in a{" "}
+        <b>MongoDB</b> database. The goal of this project was to learn and apply
+        various technologies such as <b>ReactJS</b>, <b>Redux</b>,{" "}
+        <b>Node.js</b>, <b>Express.js</b>, and <b>MongoDB</b>, while building a
+        practical and functional calendar application.
+      </p>
+    ),
+    images: [
+      "https://i.gyazo.com/9ed9264cdeaec45b244c5682e02b0251.png",
+      "https://i.gyazo.com/70f284b76cf7864e8721e9daac9429bb.png",
+      "https://i.gyazo.com/53929cc304031807ffc73b6a3d6df3e5.png",
+      "https://i.gyazo.com/b9a738279d46828576e2d2b223e47f7c.png",
+    ],
+    github: "https://github.com/WilmerAraya/calendarapp/tree/main",
+  },
 ];
